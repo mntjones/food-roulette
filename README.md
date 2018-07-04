@@ -23,7 +23,7 @@ Meal: user_id, restaurant_id
 
 ## Usage
 
-git clone git@github.com:mntjones/FoodRoulette.git
+git clone git@github.com:mntjones/food-roulette.git
 
 cd to directory
 
@@ -37,4 +37,4 @@ The web app is available as open source under the terms of the MIT License.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/mntjones/FoodRoulette. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mntjones/food-roulette. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the Contributor Covenant code of conduct.

@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   post "/signin", to: "sessions#create"
   get "/logout", to: "sessions#destroy"
 
-  root to: "welcome#home"
+  root to: "application#home"
 
 end

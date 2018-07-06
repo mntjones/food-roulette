@@ -1,3 +1,4 @@
+require 'pry'
 class SessionsController < ApplicationController
 
 	def new
@@ -6,9 +7,10 @@ class SessionsController < ApplicationController
 
 	def create
 		@user = User.find_by(name: params["name"])
+
     if @user.authenticate(params["password"])
       session[:user_id] = @user.id
-      redirect_to(controller: 'users', action: 'show')
+      redirect_to user_path(@user)
     else 
       redirect_to(controller: 'users', action: 'new')
     end 

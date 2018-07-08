@@ -1,0 +1,11 @@
+<%= form_for @restaurant do |f| %>
+
+	<%= f.label :name, "Name" %>
+	<%= f.text_field :name %><br>
+
+	<%= f.label :food_type, "Food Type Category" %>
+	<%= f.text_field :food_type %><br>
+
+	<%= f.label :meal_type,  "Choose Which Meals are Available" %>
+	<%= form.collection_check_boxes(:meal_type, {"Breakfast", "Lunch", "Dinner", "Late Night"}) %>
+<% end %>

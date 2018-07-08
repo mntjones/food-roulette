@@ -9,5 +9,9 @@
 
 	<%= f.label :password, "Enter Password" %>
 	<%= f.password_field :password %>
+
+	<%= f.label :admin, "Administrator?" %>
+	<%= f.check_box :admin %>
+
 	<%= f.submit "Create User"%>
 <% end %>

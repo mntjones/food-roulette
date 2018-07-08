@@ -1,5 +1,10 @@
 class RestaurantsController < ApplicationController
 
+	def index
+		@restaurants = Restaurant.all
+		@user = current_user
+	end
+
 	def new
 		@restaurant = Restaurant.new
 		@user = current_user

@@ -1,1 +1,11 @@
 <h1>List of Restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+	<% if @user.admin %>
+		<%= link_to "Show Restaurant", restaurant_path(restaurant) %>
+	<% else %>
+		<%= restaurant.name %>
+	<% end %>
+<% end %>
+
+<%= link_to "User Page", user_path(@user) %>

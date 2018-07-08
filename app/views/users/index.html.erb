@@ -1,0 +1,11 @@
+<h1>List of Users</h1>
+
+<p>Admin users only</p>
+
+<!--Need to figure out how to display user stats, Will not link_to user who is not signed in-->
+<% @users.each do |user| %>
+	<%= user.name %><br>
+<% end %>
+<br>
+<br>
+<%= link_to "Your User Page", user_path(@user) %>

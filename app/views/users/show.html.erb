@@ -1,5 +1,15 @@
 <h1>Hello, <%= @user.name %>!</h1>
 
-<h2>The place you should eat is...</h2>
+<% if @user.admin %>
+	<%= link_to 'Restaurant Stats', restaurants_path %>
+	<%= link_to 'Users Stats', users_path %>
 
-<h1><%= @message %></h1>
+
+<% else %>
+	<h2>The place you should eat is...</h2>
+
+	<h1><%= @message %></h1>
+<% end %>
+
+<%= link_to 'See Restaurants', restaurants_path %>
+<%= link_to 'Log Out', user_path, method: "delete" %>
